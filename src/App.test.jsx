@@ -1,12 +1,12 @@
 import { describe, expect, it } from 'vitest';
-import { render, screen } from '@testing-library/react'
+import { render, screen } from './utils/test-utils/test-utils.jsx';
 
-import App from './App.jsx';
+import App from 'src/App.jsx';
 
 describe('App', async () => {
 	it('should render while authenticating', () => {
 		render(<App />);
 
-		expect(screen.getByText('Vite + React')).toBeInTheDocument();
+		expect(screen.getByText('Vite + Reactooooo')).toBeInTheDocument();
 	});
 });
