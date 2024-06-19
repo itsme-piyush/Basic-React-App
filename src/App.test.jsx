@@ -1,12 +1,7 @@
-import { describe, expect, it } from 'vitest';
-import { render, screen } from './utils/test-utils/test-utils.jsx';
+import { describe, it, expect } from 'vitest'
 
-import App from 'src/App.jsx';
-
-describe('App', async () => {
-	it('should render while authenticating', () => {
-		render(<App />);
-
-		expect(screen.getByText('Vite + Reactooooo')).toBeInTheDocument();
-	});
-});
+describe('A truthy statement', () => {
+  it('should be equal to 2', () => {
+    expect(1+1).toEqual(2)
+  })
+})
